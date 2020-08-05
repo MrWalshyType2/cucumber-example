@@ -37,7 +37,9 @@ Feature: Google search
     When I search for "<term>"
     Then I should see a link to "<result>"
 		# Tags pull from Examples below and sends as a param
+		# Test number = number of rows of data (3 rows of data = 3 tests)
     Examples: 
       | term  	| result 	 										 									| status  |
       | pokemon | https://www.pokemon.com/uk/  									| success |
       | oranges | https://en.wikipedia.org/wiki/Orange_(fruit)  | success |
+      | bbc		  | https://www.bbc.co.uk/news									  | success |
